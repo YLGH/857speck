@@ -1,10 +1,10 @@
-B = 256
-r = 6
+B = 512
+r = 4
 
 import math
 def distinguish(ctxt_blocks):
     N = 256
-    R = [0]*(2**8)
+    R = [0]*(N)
     for c in ctxt_blocks:
         for g in c:
             R[ord(g)] += 1
